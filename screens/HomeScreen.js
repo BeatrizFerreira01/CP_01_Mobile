@@ -19,7 +19,14 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       {/* <Image style={styles.imagem} source={require('../assets/calculadora.png')} /> */}
-      <Image source={require('../assets/calculadora_logo.png')} style={styles.imagem} />
+      {/* <Image source={require('../assets/calculadora_logo.png')} style={styles.imagem} /> */}
+
+      <Image
+        source={{
+          uri: 'https://img.freepik.com/vetores-premium/logotipo-da-calculadora_10250-2607.jpg',
+        }}
+        style={styles.imagem}
+      />
 
       <Text style={styles.titulo}>CP 1 - Calculadora</Text>
 
@@ -63,7 +70,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#1E1E1E',
+    backgroundColor: '#FFFFFF',
   },
   titulo: {
     fontSize: 24,
@@ -72,9 +79,9 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   imagem: {
-    width: 120,
-    height: 120,
-    marginBottom: 20,
+    width: 300,
+    height: 150,
+    marginBottom: 40,
   },
   input: {
     width: '100%',
